@@ -28,3 +28,4 @@
        num2 = num1-num2//100-60=40
        num1 = num1-num2//100-40
        console.log(`num1 is ${num1} and num2 is ${num2}`);
+       //jjjjjjjjjjj
