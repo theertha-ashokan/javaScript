@@ -1,0 +1,311 @@
+MODULE 2---------------------JAVA SCRIPT
+----------------------------------------
+
+features
+---------
+1.it can be used in both frontend and backend
+2.in frontend js provide behaviour
+  in backend js provide logical operations
+3.js support both procedural obect oriented programing(oops)
+4.its a dynamically type language means data type changes during run time
+5.single thread programing language means line by line execution is supported
+
+BACKEND-PROCEDURAL PROGRAMING
+-----------------------------
+
+
+
+
+
+How to create a FILE
+-------------------
+->filename.js
+
+ how to run
+ -----------
+->node is a enviornment to run js outside the browser.
+->node filname.js
+(file n porath js ne run cheyyan node use cheyyyunnu
+js  is browswe understanding)
+
+display a content
+----------------
+console.long(content)
+
+for change directory--->cd directiory name(name that which we want to change)
+eg:cd javascript(existing directory change into javascript directory)
+
+
+data types
+------------
+->two types of datatype
+     1.primitive datatype
+         -immutable datatypes(this kind of datatypes canot be change,but we can reassign a new value)
+             under primitive
+             --------------
+
+             1*string ->sequence of characters that give in to single or double quotes('',"")
+
+             2*number ->(include integer,float,double...ect)
+
+             3*boolean ->means true or false values indicates
+
+             4*undefined ->variable created but not assigned value(eg:x=10 ,y    here y is undefined bcoz there is no value foe y)
+
+             5*null ->intrtional absence of value (eg:x = null)
+
+             6*bigInit ->larger numbers is called bigin numbers
+
+             7*symbol ->used to identify uniquely(commonly using while creating lybraries in js)
+
+
+     2.non primitive datatype
+       -mutable datatypes(that can be changed)
+       -combination ofnprimitive datatype
+           unde nonprimitive
+           -----------
+           8*object -> data should be stored as keyvalue pairs
+                       eg:object , array , function 
+
+                       
+
+           VARIABLES
+           ----------
+           used to store data
+              syntax:
+                    variable = value
+                    keyword variable = value
+
+
+        RULES TO CRATE VARIABLE name
+        ---------------------------------
+        1)SHOULD NOT START WITH DIGIT
+        2)subsquencent characters,digits,special character etc....
+        3)if there is more than one word in variable name
+             -camel case(that means the first letter of second word mustbshould be capital,if there is    three words first letter of third word is also becomme caps.
+                          eg:"carname"  in camel case "carName" )
+                
+             -words can be seperated by underscore (this is known as snake case)
+                (eg:car_name or carName)
+              
+          4)variable name is case sensitive
+                car,CaR,CAr(all variable is seperate)
+
+
+TYPES OF CASES(additional note)
+-------------
+1.camel case - carName
+2.pascal case - carName
+3.snake case - car_name
+4.kabab case - car-name
+5.train case - Case-Name
+6.upper snake case - CAR_NAME
+7.flat case - carname8.dot case - car.name
+
+
+                                      program
+                                      ------
+                                  
+                                  x=hello
+                                  console.log(x);  //we get the output as value od x that means hello
+
+                                  console.log(typeof(x)); //typeof used to find the datatype
+
+
+KEYWORDS[program keyword]
+----------
+->set of reserved words known as KEYWORDS
+->it gives  special meanings to the variables
+
+keywords:
+ 1. const -> No reassigning is possible
+          -> no redeclaration
+          ->hoisting is not possible
+          ->scope - functional level,we can use outside(global level)
+          
+ 2. let -> reassigning is spossible
+        ->no redeclaration
+        ->hoisting is not possible
+        ->let have block level scope access -that means acces inside of  a {}
+
+                    
+ 3. var -> reassigning is possible 
+        ->can be redeclared  
+        ->hoisting is possible
+        ->scope-global level
+
+
+hoisting[imporant in interview]
+-----------
+->using a variable before it is declared
+
+
+concatenation
+---------------
+->appending(add) one or more datatypes
+  in concatenation there is no multiplication,there is only addition
+->when number + number = number
+       string + number = string
+       string + string = string
+
+Template litteral
+--------------------
+->its a way of displaying content
+
+    syn: `content ${variables}`
+
+
+
+    OPERATORS
+    ------------
+    1.Assignment operator -> reprecented by (=) symbol
+
+    2.Arithematic -> Addition (+)
+                    subtraction (-)
+                    division (/)
+                    multiplication (*)
+                    modulus-reminder( %)
+                    exponenstiation (**) 
+                    increment operrator(++)
+                    decrement operators(--)
+
+
+    3.Relatinal operator-> greate than(>)
+                          greater than or equal(>=)
+                          less than(<)
+                          less than or equal(<=)
+                          double equal(==)
+                          triple equal to(===)
+
+        -relational operators return biilean value
+
+        DIFFERENCE B/N == and ===
+        -----------------------------
+        *double equal to(==)compare only value
+        *triple equal to (===) compare both value and data type
+
+   4.logical operators
+      -used in btwn relational operators
+      -returns boolean values
+
+     ->AND - &&
+           T && T = T
+           T && F = F
+           F && T = F
+           F && F = F
+
+     OR - ||
+           T || T = T
+           T || F = T
+           F || T = T
+           F || F = F
+
+     NOT -!
+       !T = F (true anengi false akkum)
+       !F = T (false ane  value engi true akkum)
+                         
+5.icrement(++) or decrement(--) operators
+   eg: x = 10
+       x++
+       console.log(b);
+       x++ = x=x+1 =11
+
+       x = 10
+       x--
+       console.log(b);
+       x-- = x=x+1 =9
+
+  6.shorthand opperators
+    x = x-10 = x-=10
+    x = x+10 = x+=10
+
+ 7.TERNARY OPERATOR(used to solve more than one condition)
+     condition?'true statement': 'false statement'
+
+  8.truthy operator(used to solve only one condition)
+   condition && statement
+
+
+
+
+
+CONDITIONAL STATEMENTS/decision making STATEMENTS
+------------------------------------------------
+-to conditionaly execute a STATEMENTS
+1)if else
+  - at a time only one statement is execute
+
+   syn:
+      if(condition)
+      {
+        true statements
+      }
+      else
+      {
+        false statements
+      }
+
+
+      positive number=>number should be largest zero
+      negative number => number should be less zero
+      even number=> divided by 2 gives zero
+      odd numbers=> divided by 2 not gives zero
+      divisibility means ===>number %number =0
+
+      factorial--->product of all positive integers from 1 to that number.
+
+          factorial of n is written as n!
+
+          Example:
+           5! = 5 × 4 × 3 × 2 × 1 = 120
+
+      prime number---->number should have two factors that is one and the number itself,other numbers are called composite numbers
+
+      natural numbers---> set of positive whole numbers that we use for counting.
+
+      whole numbert-------->0,1,2set of non-negative integers — that means they start from 0 and include all positive natural numbers.
+
+      intigers------------->both positive and negative(1,2,-4,6.......)
+
+
+  LOOPING STATEMENTS
+  --------------------
+  -to execute a statement repeatedly in a programe files.
+  -once control entries the loop -exit only possible when the condition is false.
+
+  1)while
+      
+      synt:
+         
+          variable initialization
+          while(condition)//number of time the loop will execute
+          {
+          statement
+          exit condition/increment or decrement condition
+          }
+
+break
+------
+use to forcefully exit the loop
+                           -----
+
+
+
+  2)for
+  
+   synt:
+      for (variable_initialisation;condition;exit/incr/decrement statement)
+      {
+        statement
+      }
+
+
+
+
+
+
+
+  power
+  -----
+2(sqr)// 4 9 16 25 36 49 64 81 100
+3(cube)//1 8 27 64 125 216 343 512  729 1000
