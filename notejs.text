@@ -309,3 +309,23 @@ use to forcefully exit the loop
   -----
 2(sqr)// 4 9 16 25 36 49 64 81 100
 3(cube)//1 8 27 64 125 216 343 512  729 1000
+
+
+
+
+
+
+GIT PUSH
+---------------
+git init
+git status
+git add .
+git commit -m "message"
+git remote add origin (url repo)
+git push -u origin master
+
+for add new file or modified file
+------------------------------
+git add modified file name
+git commit -m "msg"
+git push -u origin master
