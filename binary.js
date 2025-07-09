@@ -86,3 +86,35 @@ while(i<p.length && j<q.length){
    }
 }
 console.log(op.length==0?'no common number':op);
+console.log('---------------------------------------');
+
+
+
+
+//pairs
+//w.p.to print pairs whose pair sum is 6.
+a-[2,3,4,5]
+low = 0
+up = a.lenght-1
+pairsum =6
+Ispresent = false
+//if the sum is greater than pairsum,then decrement the index all other casse increament the index
+while(low<up)
+{
+    currsum = a[low]+a[up]
+    if (currsum == pairsum){
+    Ispresent = true
+     console.log(`(${a[low]},(${a[up]})`);
+     low++
+    }
+    else if(currsum<pairsum){
+        low++
+    }
+    else{
+        up--
+    }
+}
+Ispresent && console.log('no pairs');
+
+console.log('-----------------------------------');
+
