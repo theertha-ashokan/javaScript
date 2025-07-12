@@ -2,21 +2,21 @@
 
 //const...using variable before it declared in the case of const,this is not working
 
-// console.log(x);
-// const x = 'hello'
+console.log(x);
+const x = 'hello'
 
 
 
 //case of var....this op is "undefined"
 
-// console.log(x);
-// var x = 'hello'
+console.log(y);
+var y = 'hello'
 
 
 //case of let
 
-// console.log(x);
-// let x = 'hello'
+console.log(z);
+let z = 'hello'
 
 //scope
 i=0
