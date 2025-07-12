@@ -16,7 +16,6 @@ for (i = 0; i <= weekday.length - 1; i++) {
     console.log(weekday[i]);
 
 }
-
 console.log('--------------------');
 
 //using for in(we can acces index)
